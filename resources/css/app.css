@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container {
+    position: relative;
+}
+
+.container .flex {
+    position: relative;
+}
+
+.container .absolute img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Adjust based on your layout */
+}
+
+.container .absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the stacked images */
+}
