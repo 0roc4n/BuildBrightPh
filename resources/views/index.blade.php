@@ -18,7 +18,6 @@
     </head>
     <body class="font-sans antialiased">
         @include('layouts.homenav')
-        <div class="">
            <section id="#home " class="lg:mt-28">
                 <div class="container flex justify-center">
                     <div class="lg:flex lg:flex-row justify-center mr-10">
@@ -89,9 +88,11 @@
            <section class="mt-28 ml-10">
             @include('index.shop-rider')
            </section>
-           <section class="mt-28 ml-10">
-            
+           <div class="mt-28">
+            @include('index.index-about')
+           </div>
+           <section>
+            contact us
            </section>
-        </div>
     </body>
 </html>
