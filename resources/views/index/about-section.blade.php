@@ -31,7 +31,7 @@
                     <span class="px-12 text-xl lg:text-3xl text-white font-bold tracking-widest">Our Vision</span>
                     <i class="fa-solid fa-chevron-up text-3xl text-white px-10"></i>
                 </div>
-                <div class="accordion-content2 text-white font-semibold lg:text-2xl mt-5 tracking-widest">
+                <div class="accordion-content2 text-white font-semibold lg:text-2xl mt-5 tracking-widest hidden">
                     To empower communities with top-quality hardware and construction materials, 
                     delivering exceptional service and ensuring customer satisfaction.
                 </div>
