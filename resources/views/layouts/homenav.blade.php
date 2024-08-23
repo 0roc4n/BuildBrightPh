@@ -2,18 +2,20 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16 items-center">
             <!-- Logo -->
-            <div class="flex items-center">
+            <div class="flex items-center lg:ml-20">
                 <a href="{{ route('dashboard') }}">
                     <x-application-logo class="block h-5 w-auto fill-current text-gray-800" />
                 </a>
             </div>
 
             <!-- Regular Menu (Hidden on small screens) -->
-            <div class="hidden lg:flex space-x-8">
+            <div class="hidden lg:flex space-x-10">
                 <x-nav-link :href="route('home')" :active="request()->routeIs('home')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
                     {{ __('Home') }}
                 </x-nav-link>
-                <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Shop</a>
+                <x-nav-link :href="route('shop.index')" :active="request()->routeIs('shop.index')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
+                    {{ __('Shop') }}
+                </x-nav-link>
                 <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Catalog</a>
                 <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Bright Stories</a>
                 <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">About us</a>
@@ -38,7 +40,7 @@
     <div id="mobileMenu" class="hidden lg:hidden absolute right-0 top-16 bg-white w-1/2 border-t-2 border-red-500 shadow-lg rounded-b-lg">
         <ul class="flex flex-col p-4">
             <li><a href="{{ route('home') }}" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Home</a></li>
-            <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Shop</a></li>
+            <li><a href="{{ route('shop.index') }}" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Shop</a></li>
             <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Catalog</a></li>
             <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Bright Stories</a></li>
             <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">About us</a></li>
