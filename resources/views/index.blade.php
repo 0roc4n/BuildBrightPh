@@ -16,13 +16,15 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
     <body class="font-sans antialiased">
         @include('layouts.homenav')
            <section id="#home " class="lg:mt-28">
                 <div class="container flex justify-center">
                     <div class="lg:flex lg:flex-row justify-center mr-10">
-                        <div class="lg:w-4/6">
+                        <div class="lg:w-4/6" data-aos="fade-right">
                             <div class="lg:text-xl font-semibold">
                                 GLOBAL EXCELLENCE IN HARDWARE SOLUTIONS
                             </div>
@@ -36,8 +38,8 @@
                                 <a href="" class="bg-red-700 text-white p-4 rounded-3xl">Browse our products</a>
                             </div>
                         </div>
-                        <div class="hidden lg:block ">
-                            <div class="absolute">
+                        <div class="hidden lg:block">
+                            <div class="absolute" data-aos="fade-up-left">
                                 <img src="images/image-stack.png" alt="" class="">
                             </div>
                         </div>
@@ -56,25 +58,25 @@
                 </div>
                 <div class="mt-5">
                     <div class="grid grid-cols-1 mx-5 sm:grid-cols-1 lg:flex justify-center  lg:gap-5 m-10">
-                        <div class="sm:mt-5 lg:w-1/5  relative group">
+                        <div class="sm:mt-5 lg:w-1/5  relative group"  data-aos="fade-left">
                             <img src="images/tools.png" alt="" class="rounded-lg">
                             <div class="absolute inset-0 rounded-3xl bg-gray-200 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                 <span class="text-white font-bold text-lg bg-red-600 px-4 py-2 rounded-lg">Tools</span>
                             </div>
                         </div>
-                        <div class="mt-5 lg:w-1/5  relative group">
+                        <div class="mt-5 lg:w-1/5  relative group"  data-aos="fade-left">
                             <img src="images/powertools.png" alt="" class="rounded-lg">
                             <div class="absolute inset-0 rounded-3xl bg-gray-200 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                 <span class="text-white font-bold text-lg bg-red-600 px-4 py-2 rounded-lg">Power Tools</span>
                             </div>
                         </div>
-                        <div class="mt-5 lg:w-1/5 relative group">
+                        <div class="mt-5 lg:w-1/5 relative group " data-aos="fade-left">
                             <img src="images/paints.png" alt="" class="rounded-lg">
                             <div class="absolute inset-0 rounded-3xl bg-gray-200 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                 <span class="text-white font-bold text-lg bg-red-600 px-4 py-2 rounded-lg">Paints</span>
                             </div>
                         </div>
-                        <div class="mt-5 lg:w-1/5  relative group">
+                        <div class="mt-5 lg:w-1/5  relative group"  data-aos="fade-left">
                             <img src="images/plumbing.png" alt="" class="rounded-lg">
                             <div class="absolute inset-0 rounded-3xl bg-gray-200 bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                                 <span class="text-white font-bold text-lg bg-red-600 px-4 py-2 rounded-lg">Plumbing</span>
@@ -97,7 +99,10 @@
            </section>
            <button id="backToTop" class="fixed bottom-5 right-5 bg-red-600 text-white px-3 py-1 rounded-full shadow-lg hidden">
             <i class="fa fa-arrow-up"></i>
-        </button>        
+            </button>        
         @include('layouts.footer')
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

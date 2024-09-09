@@ -9,7 +9,7 @@
 </div>
 <div class="flex justify-center mt-10">
     <div class="lg:flex justify-center gap-5">
-        <div class="bg-image height-64 bg-shop-bg w-80">
+        <div class="bg-image height-64 bg-shop-bg w-80"  data-aos="fade-right">
             <div class="mt-32 ml-5 flex justify-center">
                 <img src="images/shop-qr.png" alt="" class="w-1/2 hidden lg:block">
             </div>
@@ -18,13 +18,13 @@
                 <a href="" class="py-2 text-2xl bg-red-700 text-white px-2 rounded-lg font-bold">Shop Now</a>
             </div>
         </div>
-        <div class="bg-image height-64 bg-rider-bg w-80">
+        <div class="bg-image height-64 bg-rider-bg w-80"  data-aos="fade-left">
             <div class="mt-4 lg:mt-32 ml-5 flex justify-center">
                 <img src="images/rider-qr.png" alt="" class="w-1/2 hidden lg:block">
             </div>
             <p class="mt-44 text-center text-md font-bold lg:mt-4">Scan the Qr or Click the button to  Apply</p>
             <div class="mt-3 flex justify-center">
-                <a href="" class="py-2 text-2xl bg-red-700 text-white px-2 rounded-lg font-bold" data-aos="fade-left">Apply Now</a>
+                <a href="" class="py-2 text-2xl bg-red-700 text-white px-2 rounded-lg font-bold">Apply Now</a>
             </div>
         </div>        
     </div>

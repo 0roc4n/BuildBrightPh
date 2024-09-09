@@ -8,7 +8,7 @@
 </div>
 <div class="mt-10" style="background-image: url('images/abt-bg.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-opacitiy: rgba(129, 129, 129, 0.5);">
     <div class="lg:flex pt-10 justify-center p-5 gap-5">
-        <div class="lg:w-1/2 bg-gray-400 bg-opacity-80 rounded-md p-5 text-white animate-slideRight">
+        <div class="lg:w-1/2 bg-gray-400 bg-opacity-80 rounded-md p-5 text-white"  data-aos="fade-right">
             <p class="text-4xl font-bold text-center mt-10">Who is Build Bright PH</p>
             <p class="mt-5 text-xl lg:text-2xl font-semibold lg:tracking-widest p-5 px-10 text-center">
                 Founded in the Philippines, Build Bright PH is a rapidly growing hardware store chain dedicated to supplying top-quality hardware and construction materials. With multiple branches nationwide, 
@@ -16,7 +16,7 @@
             </p>
         </div>
         <div class="lg:w-1/2">
-            <div class="mt-10 animate-slideLeft">
+            <div class="mt-10" data-aos="fade-left" >
                 <div class="accordion-header bg-gray-400 bg-opacity-80 w-full py-3 rounded flex justify-between cursor-pointer">
                     <span class="px-12 text-xl lg:text-3xl text-white font-bold tracking-widest">Our Mission</span>
                     <i class="fa-solid fa-chevron-up text-3xl text-white px-10"></i>
@@ -26,7 +26,7 @@
                     delivering exceptional service and ensuring customer satisfaction.
                 </div>
             </div>
-            <div class=" mt-10 animate-slideLeft">
+            <div class=" mt-10" data-aos="fade-right">
                 <div class="accordion-header2 bg-gray-400 bg-opacity-80 w-full py-3 rounded flex justify-between cursor-pointer">
                     <span class="px-12 text-xl lg:text-3xl text-white font-bold tracking-widest">Our Vision</span>
                     <i class="fa-solid fa-chevron-up text-3xl text-white px-10"></i>

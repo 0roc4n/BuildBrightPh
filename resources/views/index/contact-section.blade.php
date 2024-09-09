@@ -49,7 +49,7 @@
     </div>
     <div class="w-full lg:w-2/4">
         <p class="text-red-700 text-2xl text-center font-bold">Send Us A Message</p>
-        <div class="bg-slate-100 p-10 mt-5 rounded-lg shadow-lg border-s-4">
+        <div class="bg-slate-100 p-10 mt-5 rounded-lg shadow-lg border-s-4" data-aos="zoom-in">
             <div>
                 <label for="name" class="tracking-widest text-md font-semibold">Full Name</label>
                 <input type="text" name="name" id="" class="w-full rounded-lg mt-2">
