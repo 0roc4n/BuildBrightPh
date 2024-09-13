@@ -20,6 +20,24 @@
                 <p class="text-xl font-semibold">Product Description</p>
                 <p class="tracking-widest mt-2">{{$product->description}}</p>
             </div>
+            <div class="mt-20">
+                <div class="flex justify-center gap-5">
+                    <div>
+                       <div>
+                        <a href="" class="bg-red-700 text-white px-8 py-2 rounded-md text-lg font-bold">Buy Now</a>
+                       </div>
+                        <div class="mt-5">
+                            <a href="" class=" rounded-md text-lg">Inquire Bulk Order?</a>
+                        </div>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-solid fa-cart-shopping text-xl"></i></a>
+                    </div>
+                    <div>
+                        <a href=""><i class="fa-solid fa-heart text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>  

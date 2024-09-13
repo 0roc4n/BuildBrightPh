@@ -38,3 +38,20 @@
     position: relative;
     z-index: 1;
 }
+.owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.owl-dot.active {
+    background-color: #ff0000; /* Change this to your preferred active dot color */
+}

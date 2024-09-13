@@ -41,7 +41,7 @@
         <div class="category w-full md:w-1/5 ml-0 md:ml-10">
             <!-- Shop by Category -->
             <div class="border-l-8 border-red-700">
-                <span class="font-extrabold text-2xl ml-5 md:ml-10 text-red-700">
+                <span class="font-extrabold text-2xl ml-5 md:ml-5 text-red-700">
                     Shop by Category
                 </span>
             </div>
