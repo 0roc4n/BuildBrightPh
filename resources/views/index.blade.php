@@ -86,16 +86,16 @@
                 </div>
            </section>
            <section class="mt-32 ml-10">
-            @include('index.product-section')
+            @include('index-page.product-section')
            </section>
            <section class="mt-28 ml-10">
-            @include('index.shoprider-section')
+            @include('index-page.shoprider-section')
            </section>
            <div class="mt-28">
-            @include('index.about-section')
+            @include('index-page.about-section')
            </div>
            <section class="mt-28 ml-10">
-            @include('index.contact-section')
+            @include('index-page.contact-section')
            </section>
            <button id="backToTop" class="fixed bottom-5 right-5 bg-red-600 text-white px-3 py-1 rounded-full shadow-lg hidden">
             <i class="fa fa-arrow-up"></i>
@@ -103,6 +103,6 @@
         @include('layouts.footer')
         <script>
             AOS.init();
-          </script>
+        </script>
     </body>
 </html>

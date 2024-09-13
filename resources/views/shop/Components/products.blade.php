@@ -1,6 +1,6 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-5 p-5">
     @foreach ($products as $product)
-        <div class="relative group border hover:shadow-lg rounded-xl p-4 overflow-hidden">
+        <div class="relative group border hover:shadow-lg rounded-xl p-4 overflow-hidden" data-aos="fade-left">
             <div class="flex justify-center">
                 <img src="images/shop-images/test-product.png" alt="images" class="border rounded-lg transition-all duration-500 ease-in-out group-hover:blur-sm">
             </div>
@@ -10,7 +10,7 @@
                 <p>₱{{$product->price}}</p>
             </div>
             <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-                <a href="#" class="text-white text-xl font-bold bg-red-700 p-3 rounded-lg">View Details</a>
+                <a href="{{ url('shop/' . $product->id) }}" class="text-white text-xl font-bold bg-red-700 p-3 rounded-lg">View Details</a>
             </div>
         </div>
     @endforeach

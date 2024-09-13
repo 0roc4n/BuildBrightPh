@@ -17,8 +17,12 @@
                     {{ __('Shop') }}
                 </x-nav-link>
                 <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Catalog</a>
-                <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Bright Stories</a>
-                <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">About us</a>
+                <x-nav-link :href="route('blog.index')" :active="request()->routeIs('blog.index')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
+                    {{ __('Bright Stories') }}
+                </x-nav-link>
+                <x-nav-link :href="route('about.index')" :active="request()->routeIs('about.index')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
+                    {{ __('About Us') }}
+                </x-nav-link>
                 <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Contact us</a>
                 <div class="flex space-x-5 items-center">
                     <input type="text" placeholder="search..." class="rounded-2xl text-red-500">

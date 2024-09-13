@@ -20,5 +20,14 @@ class ShopController extends Controller
             'products' => $products
         ]);
     }
+
+    public function show($id){
+        $product = Products::with(['category'])->find($id);
+        $categories = ProductCategory::all();
+        return view('shop.show')->with([
+            'product' => $product,
+            'categories' => $categories
+        ]);
+    }
     
 }

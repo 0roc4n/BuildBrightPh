@@ -3,6 +3,9 @@
     <div class="mt-5 bg-red-700 mr-5 rounded-md">
         <h3 class="text-center p-5 text-4xl text-white font-bold">Featured Products</h3>
         <div class="grid grid-cols-2 mx-2 sm:grid-cols-2 lg:flex gap-3 justify-center mt-5 lg:mx-44 pb-10">
+            @foreach ($product_featured as $featured)
+                
+            @endforeach
             <div class="bg-white rounded-lg p-4 lg:w-1/5">
                 <img src="images/prod.png" alt="" class="h-44">
                 <p class="text-xl font-bold text-red-700">Spray Paint</p>
