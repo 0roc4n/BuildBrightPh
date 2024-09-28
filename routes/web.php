@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RiderAppController;
 use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,9 @@ Route::get('/shop/{id}', [ShopController::class, 'show'])->name('shop.show');
 Route::get('/blogs', [BlogController::class, 'index'])->name('blog.index');
 
 Route::get('/about-us', [AboutController::class, 'index'])->name('about.index');
+
+// Rider Public Route
+Route::get('/rider', [RiderAppController::class, 'index'])->name('rider.index');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
