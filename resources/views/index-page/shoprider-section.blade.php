@@ -15,7 +15,7 @@
             </div>
             <p class="mt-44 text-center text-md font-bold lg:mt-4">Scan the Qr or Click the button to shop</p>
             <div class="mt-3 flex justify-center">
-                <a href="" class="py-2 text-2xl bg-red-700 text-white px-2 rounded-lg font-bold">Shop Now</a>
+                <a href="{{route('shopApp.index')}}" class="py-2 text-2xl bg-red-700 text-white px-2 rounded-lg font-bold">Shop Now</a>
             </div>
         </div>
         <div class="bg-image height-64 bg-rider-bg w-80"  data-aos="fade-left">

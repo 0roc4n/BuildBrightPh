@@ -14,6 +14,9 @@ export default {
 
     theme: {
         extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
           keyframes: {
             slideRight: {
               '0%': { transform: 'translateX(-100%)' },

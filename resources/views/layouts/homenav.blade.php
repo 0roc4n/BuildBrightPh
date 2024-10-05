@@ -16,7 +16,9 @@
                 <x-nav-link :href="route('shop.index')" :active="request()->routeIs('shop.index')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
                     {{ __('Shop') }}
                 </x-nav-link>
-                <a href="/home" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">Catalog</a>
+                <x-nav-link :href="route('services.index')" :active="request()->routeIs('services.index')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
+                    {{ __('Services') }}
+                </x-nav-link>
                 <x-nav-link :href="route('blog.index')" :active="request()->routeIs('blog.index')" class="flex items-center font-bold text-md text-red-500 hover:border-b-4 border-red-500">
                     {{ __('Bright Stories') }}
                 </x-nav-link>
@@ -45,7 +47,7 @@
         <ul class="flex flex-col p-4">
             <li><a href="{{ route('home') }}" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Home</a></li>
             <li><a href="{{ route('shop.index') }}" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Shop</a></li>
-            <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Catalog</a></li>
+            <li><a href="{{ route('shop.index') }}" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Services</a></li>
             <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Bright Stories</a></li>
             <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">About us</a></li>
             <li><a href="/home" class="block py-2 font-bold text-md text-red-500 hover:bg-red-100">Contact us</a></li>
